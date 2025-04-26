@@ -51,3 +51,18 @@
 .active {
   @apply text-accent transition-all duration-200;
 }
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+  min-width: max-content;
+}

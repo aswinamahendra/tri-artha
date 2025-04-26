@@ -9,10 +9,10 @@ const links = [
     name: "about",
   },
   {
-    name: "journey",
+    name: "services",
   },
   {
-    name: "work",
+    name: "blogs",
   },
   {
     name: "contact",

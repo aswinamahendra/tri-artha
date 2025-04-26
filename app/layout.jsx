@@ -14,7 +14,7 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata = {
-  title: "Rizqyfolio",
+  title: "Calibration Services",
   description: "My Personal Porfolio Website",
   icons: {
     icon: [

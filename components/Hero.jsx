@@ -5,62 +5,50 @@ import { Link as ScrollLink } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
 import RotatingShape from "./RotatingShape";
 import Header from "./Header";
-import Stats from "./Stats/Stats";
-import { FiDownload, FiMail } from "react-icons/fi";
+import CompanyLogo from "./CompanyLogo";
 
 const Hero = () => {
   return (
-    <section className="h-[800px] relative bg-accent/10 xl:bg-white" id="home">
+    <section className="h-[760px] relative bg-accent/10 xl:bg-[#f8fafc]" id="home">
       {/* header */}
       <Header />
       <div className="container mx-auto h-full">
         <div
-          className="relative z-20 h-full w-full xl:max-w-[768px] flex flex-col
-        items-center xl:items-start justify-center text-center xl:text-left pt-10"
+          className="relative z-20 h-full w-full xl:max-w-[600px] flex flex-col
+          items-center xl:items-start justify-center text-center xl:text-left pt-10"
         >
-          <h1 className="h1 mb-2 max-w-[320px] xl:max-w-none">
-            <span className="text-accent">I Build And</span> Design Powerful
+          <h1 className="h1 font-semibold mb-1 max-w-[320px] xl:max-w-none">
+            <span className="text-accent">Calibration</span> Ensuring Precision with
             <TypeAnimation
               preRenderFirstString={true}
-              sequence={["Websites", 2000, "Apps", 2000]}
+              sequence={["Process", 2000, "Standards", 2000]}
               speed={50}
               repeat={Infinity}
               wrapper="span"
               cursor={false}
-              className="ml-2 xl:ml-4"
+              className="ml-2 xl:ml-4 text-accent"
             />
           </h1>
           <p className="lead max-w-[476px] mb-7">
-            Delivering powerful, custom websites that blend performance.
+          Ensuring Compliance Through Proper Laboratory Calibration Procedures
           </p>
           <div className="flex gap-5">
-            <ScrollLink to="contact" smooth>
-              <button className="btn flex gap-2 btn-accent mb-8 hover:scale-110 font-semibold transition duration-300">
-                Contact Me
-                <FiMail className="scale-125 mt-1" />
+            <ScrollLink to="services" smooth>
+              <button className="btn flex gap-2 btn-accent mb-8 rounded-[25px] hover:scale-110 font-semibold transition duration-300">
+                Explore Our Services
               </button>
             </ScrollLink>
-            <a
-              className="btn gap-2 flex border border-accent mb-8 text-accent font-semibold hover:scale-110 transition duration-300"
-              href="/assets/Resume-Rizqy_Dwi_Syahputra.pdf"
-              target="_blank"
-            >
-              Download CV
-              <FiDownload className="scale-125 mt-1"/>
-            </a>
           </div>
-          {/* stats */}
-          <Stats />
         </div>
         {/* image */}
-        <div className="hidden xl:flex w-[55vw] h-[800px] absolute top-0 right-0 bg-accent">
-          <div className="absolute w-[558px] h-[642px] bottom-0 z-40 left-[6.5vw]">
+        <div className="hidden xl:flex w-[56vw] h-[1000px] absolute top-0 right-0">
+          <div className="absolute  w-[588px] h-[600px]  top-20 z-40  left-[6.5vw]">
             <Image
               src="/assets/hero/dev.png"
               fill
               quality="100"
               priority
-              className="object-contain"
+              className="rounded-[25px] object-contain"
               alt=""
             />
           </div>
@@ -136,6 +124,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <CompanyLogo />
     </section>
   );
 };

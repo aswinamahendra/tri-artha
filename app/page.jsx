@@ -1,15 +1,19 @@
 "use client"
 import { useEffect } from "react";
 
-import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
-import Journey from "@/components/Journey";
 import Services from "@/components/Services";
 import Work from "@/components/Work/Work";
-import FixedMenu from "@/components/FixedMenu";
 import Testimonial from "@/components/Testimonial";
 import Footer from "@/components/Footer";
+import Stats from "@/components/Stats/Stats";
+import Faq from "@/components/Faq/Faq";
+import CompanyLogo from "@/components/CompanyLogo";
+import Features from "@/components/Features";
+import Steps from "@/components/Steps";
+import Blogs from "@/components/Blogs";
+import Topbar from "@/components/Topbar";
 
 const Home = () => {
   // implement locomotive scroll
@@ -22,17 +26,20 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div>
+      <Topbar />
       <Hero />
-      <FixedMenu />
+      <Features />
       <Services />
-      <About />
-      <Journey />
+      <Steps />
+      <Stats />
       <Work />
+      <Blogs />
       <Testimonial />
+      <Faq />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 

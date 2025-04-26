@@ -1,12 +1,11 @@
 "use client";
-import { Link as ScrollLink } from "react-scroll";
 import Logo from "./Logo";
 import Nav from "./Nav";
-import Socials from "./Socials";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   return (
-    <header className="w-full absolute py-8 xl:py-[48px] z-30">
+    <header className="w-full bg-white py-5 absolute xl:py-[30px] z-50">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-4 lg:justify-between">
           {/* Logo */}
@@ -16,14 +15,14 @@ const Header = () => {
             <Nav
               containerStyles="hidden xl:flex"
               listStyles="flex gap-6"
-              linkStyles="text-priamry font-primary text-lg tracking-[1.4px] 
-            transition-all duration-300 cursor-pointer"
+              linkStyles="text-primary font-primary text-lg tracking-[1.4px] 
+              transition-all duration-300 cursor-pointer"
             />
-            <Socials
-              containerStyles="flex items-center gap-2"
-              iconStyles="text-base w-[32px] h-[32px] bg-primary text-white flex 
-              items-center justify-center rounded-full"
-            />
+            <ScrollLink to="contact" smooth>
+              <button className="btn flex btn-accent mb-1 rounded-[25px] hover:scale-110 font-semibold transition duration-300">
+                Get a Qoute
+              </button>
+            </ScrollLink>
           </div>
         </div>
       </div>

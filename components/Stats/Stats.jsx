@@ -1,40 +1,62 @@
-import StatsItem from "./StatsItem";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
+import CountUp from "react-countup";
 
 const statsData = [
   {
-    endCountNum: 2,
+    endCountNum: 20,
     endCountText: "+",
-    text: "Yrs. of Experience",
+    text: "Years of Experience",
   },
   {
-    endCountNum: 9,
-    endCountText: "+",
-    text: "Websites Built",
-  },
-  {
-    endCountNum: 95,
+    endCountNum: 99,
     endCountText: "%",
-    text: "Clients Satisfied",
+    text: "Client Satisfaction",
+  },
+  {
+    endCountNum: 250,
+    endCountText: "/year",
+    text: "Successfull Orders",
+  },
+  {
+    endCountNum: 50,
+    endCountText: "+",
+    text: "Clients Subscribe",
   },
 ];
 
 const Stats = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { treshold: 0.2 });
+
   return (
-    <section
-      className="flex justify-center xl:justify-normal mx-auto xl:mx-0 
-    xl:w-[380px] gap-4 xl:gap-0"
-    >
-      {statsData.map((item, index) => {
-        return (
-          <StatsItem
-            endCountNum={item.endCountNum}
-            endCountText={item.endCountText}
-            text={item.text}
-            key={index}
-          />
-        );
-      })}
-    </section>
+    <div ref={ref} className="bg-accent py-10 w-full">
+      <div className="container mx-auto h-full">
+        <div
+          className="text-white flex flex-col items-center justify-between 
+          xl:flex-row h-full gap-14 text-center xl:text-center"
+        >
+          {statsData.map((item, index) => {
+            return (
+              <div className="w-full" key={index}>
+                <div className="text-5xl font-semibold">
+                  {inView && (
+                    <CountUp
+                      start={0}
+                      end={item.endCountNum}
+                      delay={0.5}
+                      duration={3}
+                    />
+                  )}
+                  <span>{item.endCountText}</span>
+                </div>
+                <p className="mt-5">{item.text}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 };
 

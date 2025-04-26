@@ -26,8 +26,8 @@ module.exports = {
   			primary: '#10151f',
   			secodary: '#475467',
   			accent: {
-  				DEFAULT: '#7edad2',
-  				hover: '#79d3cc'
+  				DEFAULT: '#578FCA',
+  				hover: '#9EC6F3'
   			}
   		},
   		boxShadow: {

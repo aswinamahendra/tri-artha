@@ -13,6 +13,7 @@ import { Autoplay } from "swiper/modules";
 
 import AnimatedText from "./AnimatedText";
 import Image from "next/image";
+import Pretitle from "./Pretitle";
 
 // sample data for projects with various categories
 const slides = [
@@ -68,10 +69,11 @@ const Testimonial = () => {
   }, [swiperRef]);
 
   return (
-    <div className="py-24 overflow-hidden">
+    <div className="mt-28 py-[80px] overflow-hidden shadow-custom">
       <div className="container mx-auto">
+      <Pretitle text="Testimonials" center />
         <AnimatedText
-          text="What Clients Say"
+          text="What Our Clients Say"
           textStyles="h2 mb-[30px] xl:mb-[60px] text-center"
         />
         <div className="flex flex-col lg:flex-row gap-12">
@@ -107,7 +109,7 @@ const Testimonial = () => {
           {/* slider */}
           <Swiper
             slidesPerView={1}
-            spaceBetween={30}
+            spaceBetween={20}
             loop={true}
             onSwiper={setSwiperRef}
             breakpoints={{

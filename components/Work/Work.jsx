@@ -9,7 +9,7 @@ const data = [
   {
     href: "https://dribbble.com/shots/21149429-Staycation-Website",
     category: "design",
-    img: "/assets/work/design-1.png",
+    img: "/assets/work/design-1.jpg",
     title: "Staycation Web",
   },
   {
@@ -122,17 +122,14 @@ const Work = () => {
   };
 
   return (
-    <section className="pt-24 min-h-[1000px]" id="work">
+    <section className="pt-24 min-h-[1000px]" id="services">
       <div className="container mx-auto">
-        <Tabs defaultValue="all" className="w-full flex flex-col">
+        <AnimatedText text="Our Services" textStyles="h2 mb-[30px] text-center xl:mb-0" />
+        <Tabs defaultValue="all" className="w-full flex flex-col mt-12 items-center">
           <div
             className="flex flex-col xl:flex-row items-center xl:items-start
             xl:justify-between mb-[30px]"
           >
-            <AnimatedText
-              text="My Latest Work"
-              textStyles="h2 mb-[30px] xl:mb-0"
-            />
             {/* render tab triggers */}
             <TabsList
               className="max-w-max h-full mb-[30px] flex flex-col md:flex-row
