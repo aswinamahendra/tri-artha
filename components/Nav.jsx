@@ -4,18 +4,23 @@ import { Link as ScrollLink } from "react-scroll";
 const links = [
   {
     name: "home",
+    path: "home",
   },
   {
     name: "about",
+    path: "about",
   },
   {
     name: "services",
+    path: "services",
   },
   {
-    name: "blogs",
+    name: "gallery",
+    path: "gallery",
   },
   {
     name: "contact",
+    path: "contact",
   },
 ];
 
@@ -29,7 +34,7 @@ const Nav = ({ containerStyles, listStyles, linkStyles, spy }) => {
               spy={spy}
               key={index}
               activeClass="active"
-              to={link.name}
+              to={link.path}
               smooth
               className={linkStyles}
             >

@@ -12,8 +12,6 @@ const Hero = () => {
       className="h-[760px] pb-[60px] relative bg-accent/10 xl:bg-[#f8fafc]"
       id="home"
     >
-      {/* header */}
-      <Header />
       <div className="container mx-auto h-full">
         <div
           className="relative z-20 h-full w-full xl:max-w-[600px] flex flex-col

@@ -1,18 +1,16 @@
 import { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import AnimatedText from "./AnimatedText";
-import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
-import { RiChat1Line, RiMapPin2Line, RiSmartphoneLine } from "react-icons/ri";
+import { RiChat1Line, RiMapPin2Line } from "react-icons/ri";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm("movjnygo");
+  const [state, handleSubmit] = useForm("xrbqevvr");
 
   // state for form inputs
   const [formData, setFormData] = useState({
-    firstname: "",
-    lastname: "",
+    companyname: "",
+    username: "",
     email: "",
     phone: "",
     message: "",
@@ -33,8 +31,8 @@ const Contact = () => {
       setShowIcon(true); // show the success icon
       // clear for inputs
       setFormData({
-        firstname: "",
-        lastname: "",
+        companyname: "",
+        username: "",
         email: "",
         phone: "",
         message: "",
@@ -59,7 +57,7 @@ const Contact = () => {
   return (
     <section className="pt-8 xl:pt-24 pb-32" id="contact">
       <div className="container mx-auto">
-        <div className="w-full xl:h-[780px] shadow-custom p-4 xl:p-8 xl:px-[90px] xl:py-[36px] border-t-4 border-accent">
+        <div className="w-full xl:h-[850px] shadow-custom p-4 xl:p-8 xl:px-[90px] xl:py-[36px] border-t-4 border-accent">
           <div className="flex flex-col xl:flex-row h-full gap-[40px] xl:gap-[90px]">
             {/* info */}
             <div className="w-full xl:max-w-[380px] xl:pr-[70px] xl:border-r xl:border-border/40 h-[640px]">
@@ -92,7 +90,10 @@ const Contact = () => {
                       Office
                     </h2>
                     <p className="mb-2 font-semibold">Head Office</p>
-                    <p className="mb-2">Panorama Serpong blok C2 no. 12, Bakti Jaya - Setu, Tangerang Selatan</p>
+                    <p className="mb-2">
+                      Panorama Serpong blok C2 no. 12, Bakti Jaya - Setu,
+                      Tangerang Selatan
+                    </p>
                     <a
                       href="https://www.google.com/maps/place/PT.+Tri+Artha+Manunggal/@-6.3487958,106.7013641,1131m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e69e59ecb949715:0x92c560f7f005e026!8m2!3d-6.3487958!4d106.703939!16s%2Fg%2F1pzwmnyv5!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
@@ -101,7 +102,10 @@ const Contact = () => {
                       Check Location
                     </a>
                     <p className="font-semibold mt-4 mb-2">Branch Office</p>
-                    <p className="mb-2">PJHI Batakan No.70A, Manggar, Kec. Balikpapan Tim., Kota Balikpapan, Kalimantan Timur 76116</p>
+                    <p className="mb-2">
+                      PJHI Batakan No.70A, Manggar, Kec. Balikpapan Tim., Kota
+                      Balikpapan, Kalimantan Timur 76116
+                    </p>
                     <a
                       href="https://www.google.com/maps/place/PT.+Tri+Artha+Manunggal+Balikpapan/@-1.2375957,116.9369058,1138m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2df145ded00bbd4f:0x6672fdd05da59f5d!8m2!3d-1.2375957!4d116.9394807!16s%2Fg%2F11lljzm2jt!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
@@ -141,46 +145,53 @@ const Contact = () => {
                     onSubmit={handleFormSubmit}
                     className="flex flex-col gap-6 w-full max-w-[480px]"
                   >
-                    {/* firstname & lastname fields */}
-                    <div className="flex gap-8">
-                      {/* firstname */}
-                      <div className="flex-1">
-                        <label
-                          htmlFor="firstname"
-                          className="block mb-2 text-sm font-medium text-primary"
-                        >
-                          First Name <span className="text-accent">*</span>
-                        </label>
-                        <input
-                          onChange={handleChange}
-                          type="text"
-                          id="firstname"
-                          name="firstname"
-                          value={formData.firstname}
-                          className="input"
-                          placeholder="First Name"
-                          required
-                        />
-                      </div>
-                      {/* lastname */}
-                      <div className="flex-1">
-                        <label
-                          htmlFor="lastname"
-                          className="block mb-2 text-sm font-medium text-primary"
-                        >
-                          Last Name <span className="text-accent">*</span>
-                        </label>
-                        <input
-                          onChange={handleChange}
-                          type="text"
-                          id="lastname"
-                          name="lastname"
-                          value={formData.lastname}
-                          className="input"
-                          placeholder="Last Name"
-                          required
-                        />
-                      </div>
+                    {/* companyname */}
+                    <div>
+                      <label
+                        htmlFor="companyname"
+                        className="block mb-2 text-sm font-medium text-primary"
+                      >
+                        Company Name <span className="text-accent">*</span>
+                      </label>
+                      <input
+                        onChange={handleChange}
+                        type="text"
+                        id="companyname"
+                        name="companyname"
+                        value={formData.companyname}
+                        className="input"
+                        placeholder="Company name"
+                        required
+                      />
+                      <ValidationError
+                        prefix="Email"
+                        fields="email"
+                        error={state.errors}
+                      />
+                    </div>
+                    {/* username */}
+                    <div>
+                      <label
+                        htmlFor="username"
+                        className="block mb-2 text-sm font-medium text-primary"
+                      >
+                        User Name <span className="text-accent">*</span>
+                      </label>
+                      <input
+                        onChange={handleChange}
+                        type="text"
+                        id="username"
+                        name="username"
+                        value={formData.username}
+                        className="input"
+                        placeholder="User Name"
+                        required
+                      />
+                      <ValidationError
+                        prefix="Email"
+                        fields="email"
+                        error={state.errors}
+                      />
                     </div>
                     {/* email field */}
                     <div>

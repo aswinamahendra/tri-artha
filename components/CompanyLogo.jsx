@@ -1,14 +1,15 @@
 import Image from "next/image";
+import { FaCrown } from "react-icons/fa";
 
 const CompanyLogo = () => {
   return (
     <div className="bg-accent relative w-full py-9 overflow-hidden">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center">
-          <p className="mb-8 rounded-[25px] bg-blue-400 w-[230px] h-[40px] text-white flex font-semibold items-center justify-center">
+          <p className="mb-8 rounded-[25px] bg-blue-400 w-[250px] h-[40px] gap-2 text-white flex font-semibold items-center justify-center">
+            <FaCrown className="text-yellow-400"/>
             Our Company trusted by
           </p>
-
           <div className="whitespace-nowrap animate-scroll">
             {[...Array(2)].map((_, containerIndex) => (
               <div
