@@ -7,27 +7,23 @@ import { fadeIn } from "@/lib/variants";
 const faqItemsData = [
   {
     title: "How long does a calibration usually take?",
-    description: "We could finish for 5 days after the entry queue.",
+    description: "We could finish for 5-7 days after the entry queue.",
   },
   {
     title: "Do I need qoutation for my equeipment need calibrated?",
     description: "Yes, to make sure list and order are match.",
   },
   {
-    title: "How long does a calibration usually take?",
-    description: "We could finish for 5 days after the entry queue.",
+    title: "Can We request this work order onsite?",
+    description: "Yes but make sure you're confirm to our team afte the qoutation.",
   },
   {
-    title: "How long does a calibration usually take?",
-    description: "We could finish for 5 days after the entry queue.",
+    title: "How can we prove that calibration already done?",
+    description: "Currently, We put a Sticker calibration on the equipment and Certification for validation.",
   },
   {
-    title: "How long does a calibration usually take?",
-    description: "We could finish for 5 days after the entry queue.",
-  },
-  {
-    title: "How long does a calibration usually take?",
-    description: "We could finish for 5 days after the entry queue.",
+    title: "Where we can send a qoutation or equipment list?",
+    description: "There's a button Get a Qoute and contact information at the topbar.",
   },
 ];
 
@@ -57,7 +53,7 @@ const Faq = () => {
           <Pretitle text="Faq" center />
           <h2 className="h2 mb-3">Got Questions? We've Got You Covered</h2>
           <p className="mb-11 max-w-[520px] mx-auto">
-            From project planning to final touches, We've answered the most
+            From work order to certification, We've answered the most
             common questions to help you make informed decisions.
           </p>
         </motion.div>

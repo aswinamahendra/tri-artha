@@ -1,6 +1,7 @@
-import { RiPhoneFill, RiMailFill } from "react-icons/ri";
+import { RiMailFill, RiWhatsappFill } from "react-icons/ri";
 import Socials from "./Socials";
 import { FaLink } from "react-icons/fa";
+import { MdFax } from "react-icons/md"
 
 const Topbar = () => {
   return (
@@ -18,9 +19,19 @@ const Topbar = () => {
                 className="w-8 h-8 text-white flex items-center 
               justify-center"
               >
-                <RiPhoneFill />
+                <RiWhatsappFill />
               </div>
-              <a className="font-medium text-white hover:scale-105 transition duration-200" href="https://api.whatsapp.com/send/?phone=6281770833134&text&type=phone_number&app_absent=0" target="_blank">+62 (813) 1895-2424</a>
+              <a className="font-medium text-white hover:scale-105 transition duration-200" href="https://api.whatsapp.com/send/?phone=6281770833134&text&type=phone_number&app_absent=0" target="_blank">+62 817-7083-3134</a>
+            </div>
+            {/* office */}
+            <div className="flex items-center">
+              <div
+                className="w-8 h-8 text-white flex items-center 
+              justify-center"
+              >
+                <MdFax />
+              </div>
+              <a className="font-medium text-white">+021 2930-8235</a>
             </div>
             {/* mail */}
             <div className="flex items-center">

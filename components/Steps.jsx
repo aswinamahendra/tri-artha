@@ -29,10 +29,6 @@ const Steps = () => {
                 Make sure you already list the equipment, then send email to us
               </p>
             </div>
-            <img
-              src="./assets/arrow.png"
-              className="absolute w-[150px] h-[3px] mt-[90px] left-[570px]"
-            />
             <div className="flex flex-col items-center justify-center">
               <p className="relative bg-blue-800 w-8 h-8 rounded-full text-white flex items-center justify-center mr-[150px]">
                 2
@@ -47,10 +43,6 @@ const Steps = () => {
                 We will send the price as your equipment list
               </p>
             </div>
-            <img
-              src="./assets/arrow.png"
-              className="absolute w-[150px] h-[3px] mt-[90px] left-[870px]"
-            />
             <div className="flex flex-col items-center justify-center">
               <p className="relative bg-blue-800 w-8 h-8 rounded-full text-white flex items-center justify-center mr-[150px]">
                 3
@@ -77,10 +69,6 @@ const Steps = () => {
                 We will send the equipment and certificate to your place
               </p>
             </div>
-            <img
-              src="./assets/arrow.png"
-              className="absolute w-[150px] h-[3px] mt-[90px] right-[575px]"
-            />
           </div>
         </div>
       </div>

@@ -1,11 +1,10 @@
 import React from "react";
 import { FiDownload } from "react-icons/fi";
 import Pretitle from "./Pretitle";
-import { FaWhatsapp } from "react-icons/fa";
 
 const Features = () => {
   return (
-    <section className="pt-[180px] md:flex-row items-center gap-12" id="about">
+    <section className="pt-[200px] md:flex-row items-center gap-12" id="about">
       <div className="container mx-auto">
         <Pretitle text="About Us" center />
         <h2 className="h2 mb-8 text-center">
@@ -23,7 +22,7 @@ const Features = () => {
               We Provide Many Features You can use
             </h2>
             <p className="text-gray-500 leading-relaxed">
-              You Can explore the features that we provide with fun and have
+              You can Explore the features that we provide with fun and have
               their own functions each feature.
             </p>
             <ul className="space-y-8">
@@ -35,7 +34,7 @@ const Features = () => {
                     alt="tick sign"
                   />
                 </div>
-                <span>Calibration service 24 hours</span>
+                <span>Accredited and Licensed by KAN</span>
               </li>
               <li className="flex items-center gap-3">
                 <div>
@@ -92,7 +91,7 @@ const Features = () => {
               <li className="flex gap-5 justify-center">
                 <a
                   className="btn gap-2 flex items-center rounded-[50px] btn-accent w-[198px] h-[60px] text-white font-semibold hover:scale-110 transition duration-300"
-                  href="/assets/Resume-Rizqy_Dwi_Syahputra.pdf"
+                  href="/assets/LingkupIndustri.pdf"
                   target="_blank"
                 >
                   Lingkup Kalibrasi
@@ -100,7 +99,7 @@ const Features = () => {
                 </a>
                 <a
                   className="btn gap-2 flex items-center rounded-[50px] btn-accent w-[180px] h-[60px] text-white font-semibold hover:scale-110 transition duration-300"
-                  href="/assets/Resume-Rizqy_Dwi_Syahputra.pdf"
+                  href="/assets/LingkupMedis.pdf"
                   target="_blank"
                 >
                   Lingkup Medic

@@ -14,8 +14,8 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata = {
-  title: "Calibration Services",
-  description: "Tri Artha Manunggal",
+  title: "Tri Artha Manunggal",
+  description: "Professional Calibraion and Services",
   icons: {
     icon: [
       {

@@ -4,6 +4,7 @@ import AnimatedText from "./AnimatedText";
 import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
 import { RiChat1Line, RiMapPin2Line, RiSmartphoneLine } from "react-icons/ri";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("movjnygo");
@@ -63,9 +64,7 @@ const Contact = () => {
             {/* info */}
             <div className="w-full xl:max-w-[380px] xl:pr-[70px] xl:border-r xl:border-border/40 h-[640px]">
               <h2 className="h2 text-center">Contact Us</h2>
-              <p className="mb-9 text-center">
-                Get in touch with us
-              </p>
+              <p className="mb-9 text-center">Get in touch with us</p>
               {/* Contact item */}
               <div className="flex flex-col gap-[40px] mb-16">
                 {/* Chat */}
@@ -89,31 +88,41 @@ const Contact = () => {
                     <RiMapPin2Line className="text-[28px] text-accent" />
                   </div>
                   <div>
-                    <h2 className="text-[22px] font-semibold font-primary leading-none mb-2">
+                    <h2 className="text-[22px] font-bold font-primary leading-none mb-2">
                       Office
                     </h2>
-                    <p className="mb-2">Come and say hello at our office</p>
+                    <p className="mb-2 font-semibold">Head Office</p>
+                    <p className="mb-2">Panorama Serpong blok C2 no. 12, Bakti Jaya - Setu, Tangerang Selatan</p>
                     <a
                       href="https://www.google.com/maps/place/PT.+Tri+Artha+Manunggal/@-6.3487958,106.7013641,1131m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2e69e59ecb949715:0x92c560f7f005e026!8m2!3d-6.3487958!4d106.703939!16s%2Fg%2F1pzwmnyv5!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoASAFQAw%3D%3D"
                       target="_blank"
-                      className="font-semibold text-primary"
+                      className=" text-primary underline"
                     >
-                      Panorama Serpong blok C2 no. 12, Bakti Jaya - Setu
+                      Check Location
+                    </a>
+                    <p className="font-semibold mt-4 mb-2">Branch Office</p>
+                    <p className="mb-2">PJHI Batakan No.70A, Manggar, Kec. Balikpapan Tim., Kota Balikpapan, Kalimantan Timur 76116</p>
+                    <a
+                      href="https://www.google.com/maps/place/PT.+Tri+Artha+Manunggal+Balikpapan/@-1.2375957,116.9369058,1138m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2df145ded00bbd4f:0x6672fdd05da59f5d!8m2!3d-1.2375957!4d116.9394807!16s%2Fg%2F11lljzm2jt!5m1!1e1?authuser=0&entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D"
+                      target="_blank"
+                      className=" text-primary underline"
+                    >
+                      Check Location
                     </a>
                   </div>
                 </div>
-                {/* Phone */}
+                {/* Office */}
                 <div className="flex items-start gap-[20px]">
                   <div>
-                    <RiSmartphoneLine className="text-[28px] text-accent" />
+                    <TbDeviceLandlinePhone className="text-[28px] text-accent" />
                   </div>
                   <div>
                     <h2 className="text-[22px] font-semibold font-primary leading-none mb-2">
-                      Phone
+                      Office Call Center
                     </h2>
                     <p>Mon-Fri from 8am to 5pm.</p>
                     <p className="font-semibold text-primary mt-2">
-                      +021-2930532
+                      021 2930-8235
                     </p>
                   </div>
                 </div>

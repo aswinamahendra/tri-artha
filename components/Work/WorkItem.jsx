@@ -1,11 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
-import { FiArrowRight } from "react-icons/fi";
 import { Badge } from "../ui/badge";
 
-const WorkItem = ({ href, category, img, title }) => {
+const WorkItem = ({ category, img, title }) => {
   return (
-    <Link href={href} className="group" target="_blank">
+    <div>
       <div
         className="w-full h-[300px] p-8 rounded-[30px] flex items-center
       justify-center mb-6 relative overflow-hidden bg-[#f4f4f4]"
@@ -18,7 +16,7 @@ const WorkItem = ({ href, category, img, title }) => {
           fill
           priority
           quality={100}
-          className="object-cover group-hover:scale-105 transition-all duration-500"
+          className="object-cover hover:scale-125 hover:rotate-12 transition-all duration-500"
           alt=""
         />
       </div>
@@ -26,13 +24,9 @@ const WorkItem = ({ href, category, img, title }) => {
         <div className="flex-1">
           <h3 className="h3">{title}</h3>
         </div>
-        <button className="bg-accent text-white rounded-full w-[48px] h-[48px] 
-        flex items-center justify-center -rotate-45 group-hover:rotate-0 transition-all 
-        duration-500">
-        <FiArrowRight className="text-2xl" />
-        </button>
+        
       </div>
-    </Link>
+    </div>
   );
 };
 

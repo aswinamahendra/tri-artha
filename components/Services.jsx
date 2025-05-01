@@ -10,15 +10,15 @@ import { TbRulerMeasure } from "react-icons/tb"
 
 const serviceData = [
   {
-    name: "calibration",
+    name: "industrial",
     icon: <TbRulerMeasure />,
-    title: "Calibration",
+    title: "Industrial",
     description:
       "We calibrate with precision and standart, ensuring that every measurement are accurate, safe and ready to use. Start from 0, stable at 0 and Endup to 0.",
     serviceList: [
       "Pressure",
-      "Dimensions",
-      "Mass",
+      "Dimensional",
+      "Volume",
       "Electricity",
       "Temperature",
       "Flow",
@@ -34,15 +34,17 @@ const serviceData = [
     icon: <FaBriefcaseMedical />,
     title: "Medical",
     description:
-      "We calibrate with precision and standart, ensuring that every measurement are accurate, safe and ready to use. Start from 0, stable at 0 and Endup to 0.",
+      "Medical Equipment needs to be precise. We have to make sure that every tools able to operate for medical unit, here's the equipment list we can calibrate",
     serviceList: [
-      "Pressure",
-      "Dimensions",
-      "Mass",
-      "Electricity",
-      "Temperature",
-      "Flow",
-      "Geodetic",
+      "Life Support",
+      "Radiology",
+      "In Vitro Diagnostic",
+      "Medic Rehability",
+      "Electro Medic Diagnostic",
+      "Surgical Equipment",
+      "Sterilization and Disentification",
+      "Dental Unit",
+      "Personal Care",
     ],
     thumbs: [
       { url: "/assets/services/thumb-3.png" },
@@ -54,15 +56,14 @@ const serviceData = [
     icon: <PiCertificateBold />,
     title: "Training",
     description:
-      "We calibrate with precision and standart, ensuring that every measurement are accurate, safe and ready to use. Start from 0, stable at 0 and Endup to 0.",
+      "Calibration training is very important in enviroments like customer service quality assurance, acedemic granding, employee perfomance reviews, medical unit and anywhere standardized evaluation is critical",
     serviceList: [
       "Pressure",
-      "Dimensions",
-      "Mass",
+      "Dimensional",
+      "Volume",
       "Electricity",
       "Temperature",
       "Flow",
-      "Geodetic",
     ],
     thumbs: [
       { url: "/assets/services/thumb-5.png" },
@@ -92,7 +93,7 @@ const serviceData = [
 ];
 
 const Services = () => {
-  const [activeTab, setActiveTab] = useState("calibration");
+  const [activeTab, setActiveTab] = useState("industrial");
 
   return (
     <section className="pt-16 pb-[100px] xl:pt-24">
@@ -107,7 +108,7 @@ const Services = () => {
 
         {/* Tabs */}
         <Tabs
-          defaultValue="calibration"
+          defaultValue="industrial"
           onValueChange={(value) => setActiveTab(value)}
           className="flex flex-col xl:flex-row w-full gap-[30px]"
         >

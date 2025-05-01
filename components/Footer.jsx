@@ -4,7 +4,6 @@ import {
   RiMapPin2Fill,
   RiPhoneFill,
 } from "react-icons/ri";
-import Logo from "./Logo";
 import Link from "next/link";
 import Image from "next/image";
 import Socials from "./Socials";
@@ -20,7 +19,7 @@ const Footer = () => {
               <Image src="/assets/logo.png" width={230} height={48} alt="" />
             </Link>
             <p className="text-border max-w-[270px] text-white">
-              Lorem Ipsum dolor sit amet consectetur
+              Professional in Technical Services for Calibration and Medical, NDT, Repair and Training.
             </p>
           </div>
           {/* contact */}
@@ -33,11 +32,11 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-4">
                 <RiPhoneFill className="text-accent text-xl" />
-                <p className="text-white">+62 (813) 1895 2424</p>
+                <p className="text-white">+62 817-7083-3134</p>
               </li>
               <li className="flex items-center gap-4">
                 <RiMailFill className="text-accent text-xl" />
-                <p className="text-white">15315 Serpong, Indonesia</p>
+                <p className="text-white">info@tri-artha.com</p>
               </li>
             </ul>
           </div>
