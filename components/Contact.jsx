@@ -76,7 +76,7 @@ const Contact = () => {
                     </h2>
                     <p>Our friendly team is here to help.</p>
                     <p className="font-semibold text-primary mt-2">
-                      info.tri-artha@email.com
+                      info@tri-artha.com <span>Lkmediktam@gmail.com</span>
                     </p>
                   </div>
                 </div>

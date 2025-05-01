@@ -75,15 +75,13 @@ const serviceData = [
     icon: <FaTools />,
     title: "Service",
     description:
-      "We calibrate with precision and standart, ensuring that every measurement are accurate, safe and ready to use. Start from 0, stable at 0 and Endup to 0.",
+      "We able to check the tools needs to be maintained and service. When it out of our tolerance We will make sure the tools are ready to use",
     serviceList: [
-      "Pressure",
-      "Dimensions",
-      "Mass",
-      "Electricity",
-      "Temperature",
-      "Flow",
-      "Geodetic",
+      "Repair and Service",
+      "Adjustment and Settings",
+      "Spare Parts",
+      "General Checking",
+      "Add and Buy Equipment",
     ],
     thumbs: [
       { url: "/assets/services/thumb-7.png" },

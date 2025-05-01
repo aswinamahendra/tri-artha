@@ -3,13 +3,12 @@
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 import { TypeAnimation } from "react-type-animation";
-import Header from "./Header";
 import CompanyLogo from "./CompanyLogo";
 
 const Hero = () => {
   return (
     <section
-      className="h-[760px] pb-[60px] relative bg-accent/10 xl:bg-[#f8fafc]"
+      className="w-full h-[670px] pb-[60px] relative bg-accent/10 xl:bg-[#f8fafc]"
       id="home"
     >
       <div className="container mx-auto h-full">
@@ -42,8 +41,8 @@ const Hero = () => {
           </div>
         </div>
         {/* image */}
-        <div className="hidden xl:flex w-[56vw] h-[1000px] absolute top-0 right-0">
-          <div className="absolute w-[588px] h-[600px]  top-20 z-40  left-[6.5vw]">
+        <div className="hidden xl:flex w-[56vw] h-[900px] absolute top-0 right-0">
+          <div className="absolute w-[588px] h-[490px] top-20 z-40 left-[6.5vw]">
             <Image
               src="/assets/hero/dev.png"
               fill
