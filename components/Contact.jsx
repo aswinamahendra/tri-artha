@@ -133,7 +133,7 @@ const Contact = () => {
               </div>
             </div>
             {/* form */}
-            <div className="flex-1">
+            <div className="mb:mt-[50px] flex-1">
               <h2 className="h2 text-center">Request A Qoute</h2>
               <p className="mb-9 text-center">
                 If you interested feel free to send your request to us.

@@ -14,7 +14,7 @@ const CompanyLogo = () => {
             {[...Array(2)].map((_, containerIndex) => (
               <div
                 key={containerIndex}
-                className="inline-flex items-center gap-[78px] mr-[78px]"
+                className="inline-flex items-center gap-[80px] mr-[50px]"
               >
                 {Array.from({ length: 7 }).map((_, index) => (
                   <div className="inline-block" key={index}>
@@ -22,8 +22,8 @@ const CompanyLogo = () => {
                       src={`/assets/company/com-${index + 1}.png`}
                       alt="company"
                       height={250}
-                      width={250}
-                      className="min-w-[100px] w-[150px] h-[50px] object-contain"
+                      width={300}
+                      className="min-w-[150px] w-[200px] h-[50px] object-contain"
                     />
                   </div>
                 ))}
