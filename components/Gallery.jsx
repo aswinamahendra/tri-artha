@@ -102,7 +102,7 @@ const Blogs = () => {
         <div className="flex flex-col lg:flex-col gap-12">
           {/* slider info */}
           <div
-            className="w-max xl:w-[700px] flex flex-col 
+            className="w-max xl:w-[600px] flex flex-col 
           justify-center items-center xl:items-start text-center xl:text-left 
           mx-auto xl:mx-0"
           ></div>

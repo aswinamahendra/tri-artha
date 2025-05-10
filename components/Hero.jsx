@@ -8,13 +8,13 @@ import CompanyLogo from "./CompanyLogo";
 const Hero = () => {
   return (
     <section
-      className="w-full h-[670px] pb-[60px] relative bg-accent/10 xl:bg-[#f8fafc]"
+      className="w-full h-[650px] pb-[30px] relative bg-white xl:white"
       id="home"
     >
       <div className="container mx-auto h-full">
         <div
           className="relative z-20 h-full w-full xl:max-w-[600px] flex flex-col
-          items-center xl:items-start justify-center text-center xl:text-left pt-[70px]"
+          items-center xl:items-start justify-center text-center xl:text-left top-0"
         >
           <h1 className="h1 font-semibold mb-1 max-w-[320px] xl:max-w-none">
             <span className="text-accent">Calibration</span> Ensuring Precision
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
         {/* image */}
         <div className="hidden xl:flex w-[56vw] h-[900px] absolute top-0 right-0">
-          <div className="absolute w-[588px] h-[490px] top-20 z-40 left-[6.5vw]">
+          <div className="absolute w-[588px] h-[490px] top-10 z-40 left-[6.5vw]">
             <Image
               src="/assets/hero/dev.png"
               fill

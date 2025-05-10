@@ -19,10 +19,14 @@ const serviceData = [
       "Pressure",
       "Dimensional",
       "Volume",
+      "Mass & Balance",
       "Electricity",
       "Temperature",
+      "Torque Tester",
       "Flow",
       "Geodetic",
+      "Chemical Analysts",
+      "Sound Level",
     ],
     thumbs: [
       { url: "/assets/services/thumb-1.png" },
@@ -64,6 +68,7 @@ const serviceData = [
       "Electricity",
       "Temperature",
       "Flow",
+      "Force",
     ],
     thumbs: [
       { url: "/assets/services/thumb-5.png" },
@@ -71,9 +76,9 @@ const serviceData = [
     ],
   },
   {
-    name: "service",
+    name: "services",
     icon: <FaTools />,
-    title: "Service",
+    title: "Services",
     description:
       "We able to check the tools needs to be maintained and service. When it out of our tolerance We will make sure the tools are ready to use",
     serviceList: [

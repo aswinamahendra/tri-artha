@@ -16,7 +16,7 @@ const WorkItem = ({ category, img, title }) => {
           fill
           priority
           quality={100}
-          className="object-cover hover:scale-125 hover:rotate-12 transition-all duration-500"
+          className="object-fit hover:scale-125 transition-all duration-500"
           alt=""
         />
       </div>

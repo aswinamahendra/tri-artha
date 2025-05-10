@@ -4,11 +4,11 @@ import Pretitle from "./Pretitle";
 
 const Features = () => {
   return (
-    <section className="pt-[200px] md:flex-row items-center gap-12" id="about">
+    <section className="pt-[250px] md:flex-row items-center gap-12" id="about">
       <div className="container mx-auto">
         <Pretitle text="About Us" center />
         <h2 className="h2 mb-8 text-center">
-          <span className="text-accent">20 Years of Trusted </span>in
+          <span className="text-accent">25 Years of Trusted </span>in
           Calibration
         </h2>
         <div className="mt-20 flex flex-col xl:flex-row h-full gap-[40px] xl:gap-[90px]">
@@ -18,7 +18,7 @@ const Features = () => {
             alt="feature image"
           />
           <div className="flex-1 space-y-5">
-            <h2 className="text-primary text-4xl font-bold leading-tight">
+            <h2 className="text-primary text-3xl font-bold leading-tight">
               We Provide Many Features You can use
             </h2>
             <p className="text-gray-500 leading-relaxed">
@@ -35,6 +35,16 @@ const Features = () => {
                   />
                 </div>
                 <span>Accredited and Licensed by KAN</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <div>
+                  <img
+                    src="/assets/features/Checkmark.png"
+                    className="h-[24px]"
+                    alt="tick sign"
+                  />
+                </div>
+                <span>We can Adjustment and Setting if the tools out of tolerance</span>
               </li>
               <li className="flex items-center gap-3">
                 <div>

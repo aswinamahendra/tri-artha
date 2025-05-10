@@ -345,7 +345,7 @@ const Work = () => {
   return (
     <section className="pt-24 min-h-[1000px]" id="services">
       <div className="container mx-auto">
-        <AnimatedText text="Our Services" textStyles="h2 mb-[30px] text-center xl:mb-0" />
+        <AnimatedText text="Our Services for Calibration" textStyles="h2 mb-[30px] text-center xl:mb-0" />
         <Tabs defaultValue="all" className="w-full flex flex-col mt-12 items-center">
           <div
             className="flex flex-col xl:flex-row items-center xl:items-start

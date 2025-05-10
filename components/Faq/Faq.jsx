@@ -10,7 +10,7 @@ const faqItemsData = [
     description: "We could finish for 5-7 days after the entry queue.",
   },
   {
-    title: "Do I need qoutation for my equeipment need calibrated?",
+    title: "Do I need qoutation for my equipment need calibrated?",
     description: "Yes, to make sure list and order are match.",
   },
   {
