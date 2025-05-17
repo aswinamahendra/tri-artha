@@ -41,7 +41,7 @@ const Topbar = () => {
               >
                 <RiMailFill />
               </div>
-              <p className="font-medium text-white">info@tri-artha.com</p>
+              <a className="font-medium text-white" href="mailto:info@tri-artha.com?subject=Feedback&body=Message">info@tri-artha.com</a>
             </div>
             {/* linktree */}
             <div className="flex items-center">
