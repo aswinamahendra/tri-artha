@@ -152,7 +152,7 @@ const Blogs = () => {
             })}
           </Swiper>
           <div className="flex flex-col items-center">
-            <h3 className="h3 mb-2">{slides[activeSlide].name}</h3>
+            <h3 className="h3 mb-2 text-center">{slides[activeSlide].name}</h3>
             <p className="mb-3 max-w-[360px] text-center">
               {slides[activeSlide].message}
             </p>
