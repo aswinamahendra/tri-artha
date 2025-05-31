@@ -57,7 +57,7 @@ const Contact = () => {
   return (
     <section className="pt-8 xl:pt-24 pb-32" id="contact">
       <div className="container mx-auto">
-        <div className="w-full xl:h-[850px] shadow-custom p-4 xl:p-8 xl:px-[90px] xl:py-[36px] border-t-4 border-accent">
+        <div className="w-full  xl:h-[850px] shadow-custom p-4 xl:p-8 xl:px-[90px] xl:py-[36px] border-t-4 border-accent">
           <div className="flex flex-col xl:flex-row h-full gap-[40px] xl:gap-[90px]">
             {/* info */}
             <div className="w-full xl:max-w-[380px] xl:pr-[70px] xl:border-r xl:border-border/40 h-[640px]">
@@ -133,8 +133,8 @@ const Contact = () => {
               </div>
             </div>
             {/* form */}
-            <div className="mb:mt-[50px] flex-1">
-              <h2 className="h2 text-center">Request A Qoute</h2>
+            <div className="flex-1">
+              <h2 className="h2 mt-[50px] lg:mt-[5px] text-center">Request A Qoute</h2>
               <p className="mb-9 text-center">
                 If you interested feel free to send your request to us.
               </p>
