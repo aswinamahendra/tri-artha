@@ -19,39 +19,57 @@ import Pretitle from "./Pretitle";
 const slides = [
   {
     img: "/assets/testimonial/img-1.png",
-    name: "Emma White",
+    name: "Klinik Gigi",
     message:
-      "The service was fantastic! Highly recommend it to anyone looking for top noth design",
+      "Klinik Sito Dental",
   },
   {
     img: "/assets/testimonial/img-2.png",
-    name: "Sophia Martinez",
+    name: "Klinik Tumbuh kembang anak",
     message:
-      "I couldn't be happier with the results. The website is both beautiful and functional!",
+      "Klinik Tumbuh kembang anak Superkidz",
   },
   {
     img: "/assets/testimonial/img-3.png",
-    name: "David Johnson",
+    name: "Klinik Pratama",
     message:
-      "Excellent work! The project was handled professionally from start to finish!",
+      "Klinik ASA Medika",
   },
   {
     img: "/assets/testimonial/img-4.png",
-    name: "Olivia Williams",
+    name: "Klinik Pratama",
     message:
-      "Everthing was delivered on time and the design exceed my expectations",
+      "Klinik Lentera",
   },
   {
     img: "/assets/testimonial/img-5.png",
-    name: "Isabella Brown",
+    name: "Klinik Pratama",
     message:
-      "Amazing attention to detail. My site looks professional and user-friendly",
+      "Klinik Medifarma",
   },
   {
     img: "/assets/testimonial/img-6.png",
-    name: "Liam Davis",
+    name: "Klinik Pratama",
     message:
-      "The team truly understood my needs. My website is faster and looks great",
+      "Klinik Ensha Medika",
+  },
+  {
+    img: "/assets/testimonial/img-7.png",
+    name: "Klinik Gigi",
+    message:
+      "Dentalosophy",
+  },
+  {
+    img: "/assets/testimonial/img-8.png",
+    name: "Klinik Gigi",
+    message:
+      "Mydents Dental Care",
+  },
+  {
+    img: "/assets/testimonial/img-9.png",
+    name: "Klinik Gigi",
+    message:
+      "Axel Dental",
   },
 ];
 
@@ -84,8 +102,8 @@ const Testimonial = () => {
           mx-auto xl:mx-0"
           >
             <ImQuotesLeft className="text-9xl text-accent/20 leading-none mb-4" />
-            <h3 className="h3 mb-2">{slides[activeSlide].name}</h3>
-            <p className="mb-8 max-w-[360px]">{slides[activeSlide].message}</p>
+            <p className="h3 mb-2">{slides[activeSlide].name}</p>
+            <h3 className="mb-8 max-w-[360px]">{slides[activeSlide].message}</h3>
             {/* slider btns */}
             <div className="flex gap-3">
               <button
