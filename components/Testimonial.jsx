@@ -71,6 +71,12 @@ const slides = [
     message:
       "Axel Dental",
   },
+  {
+    img: "/assets/testimonial/img-10.png",
+    name: "Klinik Pratama",
+    message:
+      "Bumame",
+  },
 ];
 
 const Testimonial = () => {
@@ -89,9 +95,9 @@ const Testimonial = () => {
   return (
     <div className="mt-28 py-[80px] overflow-hidden shadow-custom">
       <div className="container mx-auto">
-      <Pretitle text="Testimonials" center />
+      <Pretitle text="Medical" center />
         <AnimatedText
-          text="What Our Clients Say"
+          text="Our Medical Clients"
           textStyles="h2 mb-[30px] xl:mb-[60px] text-center"
         />
         <div className="flex flex-col lg:flex-row gap-12">
@@ -102,8 +108,8 @@ const Testimonial = () => {
           mx-auto xl:mx-0"
           >
             <ImQuotesLeft className="text-9xl text-accent/20 leading-none mb-4" />
-            <p className="h3 mb-2">{slides[activeSlide].name}</p>
-            <h3 className="mb-8 max-w-[360px]">{slides[activeSlide].message}</h3>
+            <p className="mb-4">{slides[activeSlide].name}</p>
+            <h3 className="h3 mb-8 max-w-[360px]">{slides[activeSlide].message}</h3>
             {/* slider btns */}
             <div className="flex gap-3">
               <button
@@ -126,7 +132,7 @@ const Testimonial = () => {
           </div>
           {/* slider */}
           <Swiper
-            slidesPerView={1}
+            slidesPerView={3}
             spaceBetween={20}
             loop={true}
             onSwiper={setSwiperRef}
@@ -134,7 +140,7 @@ const Testimonial = () => {
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
-              1280: { slidesPerView: 4 },
+              1280: { slidesPerView: 3 },
             }}
             onSlideChange={(swiper) => setActiveSlide(swiper.realIndex)}
             //update the active slide index
@@ -148,7 +154,7 @@ const Testimonial = () => {
             {slides.map((slide, index) => {
               return (
                 <SwiperSlide key={index} className="h-full select-none">
-                  <div className="w-full h-full flex items-end">
+                  <div className="w-full h-[340px] flex items-end"> 
                     <div
                       className={`${
                         activeSlide === index ? "h-full" : "h-[240px]"

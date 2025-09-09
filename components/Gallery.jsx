@@ -76,6 +76,24 @@ const slides = [
     message:
       "18 Febuary 2024",
   },
+  {
+    img: "/assets/gallery/gallery-11.jpg",
+    name: "Meeting with PT. Elnusa",
+    message:
+      "20 Agustus 2025",
+  },
+  {
+    img: "/assets/gallery/gallery-12.jpg",
+    name: "Discussion and Negotiation with one of the teams from the DKI DPU",
+    message:
+      "28 Juli 2025",
+  },
+  {
+    img: "/assets/gallery/gallery-13.jpg",
+    name: "Internal Calibration Training for Pressure, Flow Meter, Temperature, Mass & Scales, and Chemical Analysis at PT. Frisian Flag Indonesia",
+    message:
+      "28 Agustus 2025",
+  },
 ];
 
 const Blogs = () => {
