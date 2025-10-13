@@ -14,7 +14,7 @@ const Features = () => {
         <div className="mt-20 flex flex-col xl:flex-row h-full gap-[40px] xl:gap-[90px]">
           <img
             className="h-[640px] object-contain mx-auto rounded-[20px]"
-            src="/assets/features/features.png"
+            src="/assets/features/features2.jpg"
             alt="feature image"
           />
           <div className="flex-1 space-y-5">
@@ -44,7 +44,7 @@ const Features = () => {
                     alt="tick sign"
                   />
                 </div>
-                <span>We can Adjustment and Setting if the tools out of tolerance</span>
+                <span>We offer adjustment and setting services for out-of-tolerance tools</span>
               </li>
               <li className="flex items-center gap-3">
                 <div>
@@ -54,7 +54,7 @@ const Features = () => {
                     alt="tick sign"
                   />
                 </div>
-                <span>Quarantee for 1 Year due to Recalibration</span>
+                <span>1-Year Guarantee on Recalibration</span>
               </li>
               <li className="flex items-center gap-3">
                 <div>
@@ -64,7 +64,7 @@ const Features = () => {
                     alt="tick sign"
                   />
                 </div>
-                <span>Equipment and Tools ready to use from fresh start</span>
+                <span>Equipment and tools are ready to use from the start</span>
               </li>
               <li className="flex items-center gap-3">
                 <div>
@@ -74,7 +74,7 @@ const Features = () => {
                     alt="tick sign"
                   />
                 </div>
-                <span>Able to cancel if out tolerance and without penalty</span>
+                <span>No-penalty cancellation for out-of-tolerance results</span>
               </li>
               <li className="flex items-center gap-3">
                 <div>
@@ -85,7 +85,7 @@ const Features = () => {
                   />
                 </div>
                 <span>
-                  Our Standards are Trusted and Recalibrate every year
+                  Our Standards are trusted and recalibrated every year
                 </span>
               </li>
               <li className="flex items-center gap-3">

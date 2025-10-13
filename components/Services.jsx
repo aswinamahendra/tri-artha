@@ -14,7 +14,7 @@ const serviceData = [
     icon: <TbRulerMeasure />,
     title: "Industrial",
     description:
-      "We calibrate with precision and standart, ensuring that every measurement are accurate, safe and ready to use. Start from 0, stable at 0 and Endup to 0.",
+      "We calibrate with precision and standards, ensuring that every measurement is accurate, safe, and ready to use. Starting at 0, stable at 0, and ending at 0.",
     serviceList: [
       "Pressure",
       "Dimensional",
@@ -29,8 +29,8 @@ const serviceData = [
       "Sound Level",
     ],
     thumbs: [
-      { url: "/assets/services/thumb-1.png" },
-      { url: "/assets/services/thumb-2.png" },
+      { url: "/assets/services/industry1.jpg" },
+      { url: "/assets/services/industry2.jpg" },
     ],
   },
   {
@@ -51,8 +51,8 @@ const serviceData = [
       "Personal Care",
     ],
     thumbs: [
-      { url: "/assets/services/thumb-3.png" },
-      { url: "/assets/services/thumb-4.png" },
+      { url: "/assets/services/medical1.jpg" },
+      { url: "/assets/services/medical3.jpg" },
     ],
   },
   {
@@ -71,8 +71,8 @@ const serviceData = [
       "Force",
     ],
     thumbs: [
-      { url: "/assets/services/thumb-5.png" },
-      { url: "/assets/services/thumb-6.png" },
+      { url: "/assets/services/training1.jpg" },
+      { url: "/assets/services/training3.jpg" },
     ],
   },
   {
@@ -89,8 +89,8 @@ const serviceData = [
       "Add and Buy Equipment",
     ],
     thumbs: [
-      { url: "/assets/services/thumb-7.png" },
-      { url: "/assets/services/thumb-8.png" },
+      { url: "/assets/services/service1.jpg" },
+      { url: "/assets/services/service2.jpg" },
     ],
   },
 ];
@@ -159,9 +159,9 @@ const Services = () => {
                     {item.thumbs.map((thumb, index) => (
                       <div
                         key={index}
-                        className="relative w-[140px] xl:w-[200px] h-[140px] xl:h-[200px]"
+                        className="relative w-[140px] xl:w-[200px] h-[140px] xl:h-[200px] overflow-hidden"
                       >
-                        <Image src={thumb.url} fill alt="" className="rounded-[20px]" />
+                        <Image src={thumb.url} fill alt="" className="rounded-[20px]" objectFit="cover"/>
                       </div>
                     ))}
                   </div>
