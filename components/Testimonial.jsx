@@ -77,6 +77,12 @@ const slides = [
     message:
       "Bumame",
   },
+  {
+    img: "/assets/testimonial/img-11.png",
+    name: "Rumah Sakit",
+    message:
+      "RSIA Andini",
+  },
 ];
 
 const Testimonial = () => {
